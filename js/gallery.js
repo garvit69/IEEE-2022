@@ -25,6 +25,7 @@ document.getElementById("btn_3").addEventListener("click", (e)=>{
     document.getElementById("gallery-2").classList.add("d-none");
     document.getElementById("gallery-4").classList.add("d-none");
 })
+/*
 document.getElementById("btn_4").addEventListener("click", (e)=>{
     let gallery_4 = document.getElementById("gallery-4");
     while(gallery_4.classList.contains("d-none")==true){
@@ -34,3 +35,4 @@ document.getElementById("btn_4").addEventListener("click", (e)=>{
     document.getElementById("gallery-2").classList.add("d-none");
     document.getElementById("gallery-3").classList.add("d-none");
 })
+    */
