@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="utf-8">
     <meta name="description"
@@ -13,7 +14,7 @@
         content="IEEE is the world's largest technical professional organization. It is dedicated to the advancement of technology for the betterment of humanity."
         property="og:description" />
     <meta content="IEEE MANIT Student Branch" property="twitter:title" />
-<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
     <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
     <meta
         content="IEEE is the world's largest technical professional organization. It is dedicated to the advancement of technology for the betterment of humanity."
@@ -88,11 +89,12 @@
 
 
     /* Css for popUPs */
-    #toggle{
+    #toggle {
         cursor: pointer;
         left: 445px;
     }
-    #toggle i{
+
+    #toggle i {
         z-index: 9999999;
         position: absolute;
         padding: 10px 8px;
@@ -101,11 +103,12 @@
         font-size: 30px;
         right: 25px;
     }
-    #popUp{
+
+    #popUp {
         position: fixed;
-        top:50%;
+        top: 50%;
         color: white;
-        left:50% ;
+        left: 50%;
         transform: translate(-50%, -50%);
         /* background: #000; */
         display: flex;
@@ -117,7 +120,8 @@
         display: none;
         z-index: 1000;
     }
-    #boxL{
+
+    #boxL {
         padding: 4rem 2rem;
         background: #3AAAFF;
         color: white;
@@ -126,14 +130,16 @@
         height: 90%;
         border-radius: 10px;
     }
-    #disc{
+
+    #disc {
         font-size: 1.2rem;
         color: white;
         padding: 20px;
         margin-top: 20px 0 20px 0;
         text-align: center;
     }
-    .imagebox{
+
+    .imagebox {
         display: flex;
         align-items: center;
         margin: 0.8rem 0;
@@ -142,26 +148,30 @@
         /* border: 2px solid rebeccapurple; */
         justify-content: center;
     }
-    #mainWord{
+
+    #mainWord {
         color: rgb(247, 25, 25);
-        font-weight:600;
+        font-weight: 600;
     }
-    #title{
+
+    #title {
         text-align: center;
-        color:rgb(82, 4, 134);
+        color: rgb(82, 4, 134);
         /* border: 2px solid red; */
         font-size: 1.3rem;
         text-transform: uppercase;
     }
-    #mainHeading{
+
+    #mainHeading {
         text-align: center;
-        color:rgb(82, 4, 134);
+        color: rgb(82, 4, 134);
         /* border: 2px solid red; */
         font-size: 1.6rem;
         text-transform: uppercase;
         font-weight: 700;
     }
-    button{
+
+    button {
         border-radius: 5px;
         background: white;
         width: 10rem;
@@ -172,7 +182,8 @@
         display: block;
         /* border: 2px solid red; */
     }
-    .imagebox img{
+
+    .imagebox img {
         width: 130px;
         /* padding-bottom: 1.2rem; */
     }
@@ -186,49 +197,59 @@
         width: 100%;
         height: 100%;
         background: rgba(0, 0, 0, 0.7);
-        z-index: 999; /* Ensure the overlay is above other content */
+        z-index: 999;
+        /* Ensure the overlay is above other content */
         transition: opacity .3s;
-}
-    #btn{
+    }
+
+    #btn {
         display: flex;
         gap: 20px;
         /* margin-top: 50px; */
         padding-top: 8px;
         /* border: 2px solid red; */
     }
-    @media only screen and (max-width: 1200px){
-        #disc{
-            font-size: 1rem ;
+
+    @media only screen and (max-width: 1200px) {
+        #disc {
+            font-size: 1rem;
         }
-        #popUp{
+
+        #popUp {
             flex-wrap: wrap;
             width: 60%;
             height: fit-content;
             overflow: hidden;
         }
-        #boxL{
+
+        #boxL {
             width: 95%;
             height: 90%;
         }
-        .imagebox img{
-        width: 100px;
-        padding-bottom: 1.2rem;
 
-    }
-    button{
-        width: 10rem;
-    }
-    }
-    @media only screen and (max-width: 600px){
-        .imagebox img{
-        width: 100px;
-        padding-bottom: 1.2rem;
+        .imagebox img {
+            width: 100px;
+            padding-bottom: 1.2rem;
 
+        }
+
+        button {
+            width: 10rem;
+        }
     }
-    .imagebox{
-        padding: 0;
-    }
-        #popUp{
+
+    @media only screen and (max-width: 600px) {
+        .imagebox img {
+            width: 100px;
+            padding-bottom: 1.2rem;
+
+        }
+
+        .imagebox {
+            padding: 0;
+        }
+
+        #popUp {
             /* flex-wrap: wrap; */
             width: 90%;
             height: fit-content;
@@ -236,33 +257,39 @@
             border-radius: 7.9px;
             /* font-family: 'Anton', sans-serif; */
         }
-        .imagebox{
+
+        .imagebox {
             font-size: 1.2rem;
             padding: 10px;
         }
-        #boxL{
+
+        #boxL {
             width: 95%;
             height: 90%;
             border-radius: 8px;
         }
-        button{
+
+        button {
             font-size: 1em;
             width: 9rem;
         }
-        #disc{
-            font-size: 1rem ;
+
+        #disc {
+            font-size: 1rem;
         }
 
     }
-        @media only screen and (max-width: 400px){
-            #boxL{
-                height:75%;
-                width: 98%;
-            }
-            button{
-                width: 8rem;
-            }
+
+    @media only screen and (max-width: 400px) {
+        #boxL {
+            height: 75%;
+            width: 98%;
         }
+
+        button {
+            width: 8rem;
+        }
+    }
 </style>
 
 <body>
@@ -302,7 +329,7 @@
                                             <ul>
                                                 <li><a href="aarambh.html">AARAMBH</a></li>
                                                 <li><a href="Samwaad.html">SAMWAD</a></li>
-                                              
+
                                                 <li><a href="Sceecs.html">SCEECS</a></li>
                                             </ul>
                                         </li>
@@ -629,7 +656,7 @@
                 </div>
             </div>
         </section>
-        
+
 
 
         <!-- End Main Slider-->
@@ -646,18 +673,19 @@
 
                         <div class="about-image-wrapper">
 
-                            <figure class="image-3 wow zoomIn" data-wow-delay="900ms"><img src="images/teamPhoto2024.JPG" alt="" />
+                            <figure class="image-3 wow zoomIn" data-wow-delay="900ms"><img
+                                    src="images/teamPhoto2024.JPG" alt="" />
                             </figure>
 
-                            <figure class="image-2 wow zoomIn" data-wow-delay="600ms"><img src="images/SAMWAD25.jpg" alt="" width="250" height="250" />
+                            <figure class="image-2 wow zoomIn" data-wow-delay="600ms"><img src="images/SAMWAD25.jpg"
+                                    alt="" width="250" height="250" />
                             </figure>
 
                             <figure class="image-1 wow zoomIn" data-wow-delay="300ms"><img
                                     src="images/resource/vector.png" alt="" /></figure>
 
-                            <a href="images/resource/recap-2025.mp4"
-                                class="lightbox-image play-btn wow zoomIn" data-wow-delay="1200ms"><span
-                                    class="icon fa fa-play"></span></a>
+                            <a href="images/resource/recap-2025.mp4" class="lightbox-image play-btn wow zoomIn"
+                                data-wow-delay="1200ms"><span class="icon fa fa-play"></span></a>
 
                         </div>
 
@@ -801,599 +829,634 @@
 
                     <!--Event Block-->
 
-<!--                     <div class="feature-block col-lg-3 col-md-6 col-sm-12 wow fadeInUp" data-wow-delay="900ms">
+                    <!--                     <div class="feature-block col-lg-3 col-md-6 col-sm-12 wow fadeInUp" data-wow-delay="900ms">
                         <div class="inner-box">
                             <div class="icon-box">
                                 <!-- <a href="Srajan.html"><img src="images/srajan.jpg" alt="" title="" /></a> -->
-                                <!--<i class="icon flaticon-inspiration"></i>-->
-                            </div>
-
-                            <h4>SRAJAN</h4>
-
-                            <p>
-                                SRAJAN is a biennial case study event organized by IEEE MSB.With the tagline - Ideate |
-                                | Innovate | | Create .
-                            </p>
-
-                            <a href="Srajan.html" class="read-more">Read More</a>
-                        </div>
-                    </div> -->
-
+                    <!--<i class="icon flaticon-inspiration"></i>-->
                 </div>
 
+                <h4>SRAJAN</h4>
+
+                <p>
+                    SRAJAN is a biennial case study event organized by IEEE MSB.With the tagline - Ideate |
+                    | Innovate | | Create .
+                </p>
+
+                <a href="Srajan.html" class="read-more">Read More</a>
             </div>
+    </div> -->
 
-        </section>
+    </div>
 
-        <!-- End Feature Section -->
+    </div>
+
+    </section>
+
+    <!-- End Feature Section -->
 
 
 
-        <!--Gallery Section -->
-        <section class="gallery-section style-two">
-            <div class="auto-container">
-                <div class="sec-title text-center">
+    <!--Gallery Section -->
+    <section class="gallery-section style-two">
+        <div class="auto-container">
+            <div class="sec-title text-center">
 
-                    <!-- <span class="sub-title">Our SPEAKERS</span> -->
+                <!-- <span class="sub-title">Our SPEAKERS</span> -->
 
-                    <h2>Gallery</h2>
+                <h2>Gallery</h2>
 
-                    <span class="divider" style="margin-bottom: 20px;"></span>
-                    <div class="row my-4">
-                        <div class="col-lg-3"><button id="btn_1" class="btn btn-style-one p-2 mx-n2 ">AARAMBH</button>
-                        </div>
-                        <div class="col-lg-3"><button id="btn_2" class="btn btn-style-one p-2 mx-n2 ">SAMWAAD</button>
-                        </div>
-<!--                         <div class="col-lg-3"><button id="btn_3" class="btn btn-style-one p-2 mx-n2 ">SRAJAN</button>
+                <span class="divider" style="margin-bottom: 20px;"></span>
+                <div class="row my-4">
+                    <div class="col-lg-3"><button id="btn_1" class="btn btn-style-one p-2 mx-n2 ">AARAMBH</button>
+                    </div>
+                    <div class="col-lg-3"><button id="btn_2" class="btn btn-style-one p-2 mx-n2 ">SAMWAAD</button>
+                    </div>
+                    <!--                         <div class="col-lg-3"><button id="btn_3" class="btn btn-style-one p-2 mx-n2 ">SRAJAN</button>
                         </div> -->
-                        <div class="col-lg-3"><button id="btn_3" class="btn btn-style-one p-2 mx-n2 ">SCEECS</button>
-                        </div>
+                    <div class="col-lg-3"><button id="btn_3" class="btn btn-style-one p-2 mx-n2 ">SCEECS</button>
                     </div>
-
-                    <div class="row" id="gallery-1">
-                        <!-- Gallery Block -->
-                        <div class="gallery-block col-lg-4 col-md-4 col-sm-12">
-                            <div class="image-box">
-                                <figure class="image"><img src="images/Aarambh/Aarambh24_first.jpg" loading="lazy" alt=""></figure>
-
-                            </div>
-                        </div>
-
-                        <!-- Gallery Block -->
-                        <div class="gallery-block col-lg-4 col-md-4 col-sm-12">
-                            <div class="image-box">
-                                <figure class="image"><img src="images/Aarambh/Aarambh24_second.jpg" loading="lazy" alt=""></figure>
-
-                            </div>
-                        </div>
-
-                        <!-- Gallery Block -->
-
-
-                        <!-- Gallery Block -->
-                        <div class="gallery-block col-lg-4 col-md-4 col-sm-12">
-                            <div class="image-box">
-                                <figure class="image"><img src="images/Aarambh/Aarambh24_third.jpg" loading="lazy" alt=""></figure>
-                            </div>
-                        </div>
-
-                        <!-- Gallery Block -->
-                        <div class="gallery-block col-lg-4 col-md-4 col-sm-12">
-                            <div class="image-box">
-                                <figure class="image"><img src="images/Aarambh/Aarambh24_fourth.jpg" loading="lazy" alt=""></figure>
-
-                            </div>
-                        </div>
-                        <!-- Gallery Block -->
-                        <div class="gallery-block col-lg-4 col-md-4 col-sm-12">
-                            <div class="image-box">
-                                <figure class="image"><img src="images/Aarambh/Aarambh24_fifth.jpg"loading="lazy" alt=""></figure>
-
-                            </div>
-                        </div>
-
-                        <!-- Gallery Block -->
-                        <div class="gallery-block col-lg-4 col-md-4 col-sm-12">
-                            <div class="image-box">
-                                <figure class="image"><img src="images/Aarambh/Aarambh24main.jpg" loading="lazy" alt=""></figure>
-
-                            </div>
-                        </div>
-
-                        <!-- Gallery Block -->
-
-
-                        <!-- Gallery Block -->
-                        <div class="gallery-block col-lg-4 col-md-4 col-sm-12">
-                            <div class="image-box">
-                                <figure class="image"><img src="images/Aarambh/Aarambh24_seventh.jpg" loading="lazy" alt=""></figure>
-
-                            </div>
-                        </div>
-
-                        <!-- Gallery Block -->
-                        <div class="gallery-block col-lg-4 col-md-4 col-sm-12">
-                            <div class="image-box">
-                                <figure class="image"><img src="images/Aarambh/Aarambh24_eighth.jpg" loading="lazy" alt=""></figure>
-
-                            </div>
-                        </div>
-                        <!-- Gallery Block -->
-                        <div class="gallery-block col-lg-4 col-md-4 col-sm-12">
-                            <div class="image-box">
-                                <figure class="image"><img src="images/Aarambh/Aarambh24_ninth.jpg" loading="lazy" alt=""></figure>
-
-                            </div>
-                        </div>
-                    </div>
-
-
-                    <div class="row d-none" id="gallery-2">
-                        <!-- Gallery Block -->
-                        <div class="gallery-block col-lg-4 col-md-4 col-sm-12">
-                            <div class="image-box">
-                                <figure class="image"><img src="images/Samwad/Samwaad25_first.jpg" loading="lazy" alt=""></figure>
-
-                            </div>
-                        </div>
-
-                        <!-- Gallery Block -->
-                        <div class="gallery-block col-lg-4 col-md-4 col-sm-12">
-                            <div class="image-box">
-                                <figure class="image"><img src="images/Samwad/Samwaad25_second.jpg" loading="lazy" alt=""></figure>
-
-                            </div>
-                        </div>
-
-                        <!-- Gallery Block -->
-                        <div class="gallery-block col-lg-4 col-md-4 col-sm-12">
-                            <div class="image-box">
-                                <figure class="image"><img src="images/Samwad/Samwaad25_third.jpg" loading="lazy" alt=""></figure>
-
-                            </div>
-                        </div>
-
-                        <!-- Gallery Block -->
-                        <div class="gallery-block col-lg-4 col-md-4 col-sm-12">
-                            <div class="image-box">
-                                <figure class="image"><img src="images/Samwad/Samwad25_fourth.jpg" loading="lazy" alt=""></figure>
-
-                            </div>
-                        </div>
-                        <!-- Gallery Block -->
-                        <div class="gallery-block col-lg-4 col-md-4 col-sm-12">
-                            <div class="image-box">
-                                <figure class="image"><img src="images/Samwad/Samwad25_fifth.jpg" loading="lazy" alt=""></figure>
-
-                            </div>
-                        </div>
-                        <!-- Gallery Block -->
-                        <div class="gallery-block col-lg-4 col-md-4 col-sm-12">
-                            <div class="image-box">
-                                <figure class="image"><img src="images/Samwad/Samwad25_sixth.jpg" loading="lazy" alt=""></figure>
-
-                            </div>
-                        </div>
-                        <!-- Gallery Block -->
-                        <div class="gallery-block col-lg-4 col-md-4 col-sm-12">
-                            <div class="image-box">
-                                <figure class="image"><img src="images/Samwad/Samwad25_seventh.jpg" loading="lazy" alt=""></figure>
-
-                            </div>
-                        </div>
-                        <!-- Gallery Block -->
-                        <div class="gallery-block col-lg-4 col-md-4 col-sm-12">
-                            <div class="image-box">
-                                <figure class="image"><img src="images/Samwad/Samwad25_eighth.jpg" loading="lazy" alt=""></figure>
-
-                            </div>
-                        </div>
-                        <!-- Gallery Block -->
-                        <div class="gallery-block col-lg-4 col-md-4 col-sm-12">
-                            <div class="image-box">
-                                <figure class="image"><img src="images/Samwad/Samwad25_ninth.jpg" loading="lazy" alt=""></figure>
-
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Originally designed for SRAJAN but in use for SCEECS -->
-                    <div class="row d-none" id="gallery-3">
-                        <!-- Gallery Block -->
-                        <div class="gallery-block col-lg-4 col-md-4 col-sm-12">
-                            <div class="image-box">
-                                <figure class="image"><img src="images/SCEECS/SCEECS24_1.JPG" loading="lazy" alt=""></figure>
-
-                            </div>
-                        </div>
-
-                        <!-- Gallery Block -->
-                        <div class="gallery-block col-lg-4 col-md-4 col-sm-12">
-                            <div class="image-box">
-                                <figure class="image"><img src="images/SCEECS/SCEECS24_2.JPG" loading="lazy" alt=""></figure>
-
-                            </div>
-                        </div>
-
-                        <!-- Gallery Block -->
-                        <div class="gallery-block col-lg-4 col-md-4 col-sm-12">
-                            <div class="image-box">
-                                <figure class="image"><img src="images/SCEECS/SCEECS24_3.JPG" loading="lazy" alt=""></figure>
-
-                            </div>
-                        </div>
-
-                        <!-- Gallery Block -->
-                        <div class="gallery-block col-lg-4 col-md-4 col-sm-12">
-                            <div class="image-box">
-                                <figure class="image"><img src="images/SCEECS/SCEECS24_4.JPG" loading="lazy" alt=""></figure>
-
-                            </div>
-                        </div>
-                        <!-- Gallery Block -->
-                        <div class="gallery-block col-lg-4 col-md-4 col-sm-12">
-                            <div class="image-box">
-                                <figure class="image"><img src="images/SCEECS/SCEECS24_5.JPG" loading="lazy" alt=""></figure>
-
-                            </div>
-                        </div>
-                        <!-- Gallery Block -->
-                        <div class="gallery-block col-lg-4 col-md-4 col-sm-12">
-                            <div class="image-box">
-                                <figure class="image"><img src="images/SCEECS/SCEECS24_6.JPG" loading="lazy" alt=""></figure>
-
-                            </div>
-                        </div>
-                        <!-- Gallery Block -->
-                        <div class="gallery-block col-lg-4 col-md-4 col-sm-12">
-                            <div class="image-box">
-                                <figure class="image"><img src="images/SCEECS/SCEECS24_7.JPG" loading="lazy" alt=""></figure>
-
-                            </div>
-                        </div>
-                        <!-- Gallery Block -->
-                        <div class="gallery-block col-lg-4 col-md-4 col-sm-12">
-                            <div class="image-box">
-                                <figure class="image"><img src="images/SCEECS/SCEECS24_8.JPG" loading="lazy" alt=""></figure>
-
-                            </div>
-                        </div>
-                        <!-- Gallery Block -->
-                        <div class="gallery-block col-lg-4 col-md-4 col-sm-12">
-                            <div class="image-box">
-                                <figure class="image"><img src="images/SCEECS/SCEECS24_9.JPG" loading="lazy" alt=""></figure>
-
-                            </div>
-                        </div>
-
-                    </div>
-
-                    <div class="row d-none" id="gallery-4">
-                        <!-- Gallery Block -->
-                        <div class="gallery-block col-lg-4 col-md-4 col-sm-12">
-                            <div class="image-box">
-                                <figure class="image"><img src="images/Gallery/sceecs_24_5.jpg" loading="lazy" alt=""></figure>
-
-                            </div>
-                        </div>
-
-                        <!-- Gallery Block -->
-                        <div class="gallery-block col-lg-4 col-md-4 col-sm-12">
-                            <div class="image-box">
-                                <figure class="image"><img src="images/Gallery/sceecs_24_2.jpg" loading="lazy" alt=""></figure>
-
-                            </div>
-                        </div>
-
-                        <!-- Gallery Block -->
-                        <div class="gallery-block col-lg-4 col-md-4 col-sm-12">
-                            <div class="image-box">
-                                <figure class="image"><img src="images/Gallery/sceecs_24_1.jpg" loading="lazy" alt=""></figure>
-
-                            </div>
-                        </div>
-
-                        <!-- Gallery Block -->
-
-                        <!-- Gallery Block -->
-                        <div class="gallery-block col-lg-4 col-md-4 col-sm-12">
-                            <div class="image-box">
-                                <figure class="image"><img src="images/Gallery/sc6.jpg" loading="lazy" alt=""></figure>
-
-                            </div>
-                        </div>
-
-                        <!-- Gallery Block -->
-
-
-                        <!-- Gallery Block -->
-                        <div class="gallery-block col-lg-4 col-md-4 col-sm-12">
-                            <div class="image-box">
-                                <figure class="image"><img src="images/Gallery/sceecs_24_6.jpg" loading="lazy" alt=""></figure>
-
-                            </div>
-                        </div>
-
-                        <!-- Gallery Block -->
-
-
-                        <!-- Gallery Block -->
-                        <div class="gallery-block col-lg-4 col-md-4 col-sm-12">
-                            <div class="image-box">
-                                <figure class="image"><img src="images/Gallery/sc8.jpg" loading="lazy" alt=""></figure>
-
-                            </div>
-                        </div>
-
-                        <!-- Gallery Block -->
-                        <div class="gallery-block col-lg-4 col-md-4 col-sm-12">
-                            <div class="image-box">
-                                <figure class="image"><img src="images/Gallery/sceecs_24_3.jpg" loading="lazy" alt=""></figure>
-
-                            </div>
-                        </div>
-
-                        <!-- Gallery Block -->
-                        <div class="gallery-block col-lg-4 col-md-4 col-sm-12">
-                            <div class="image-box">
-                                <figure class="image"><img src="images/Gallery/sc12.png" loading="lazy" alt=""></figure>
-
-                            </div>
-                        </div>
-
-                        <!-- Gallery Block -->
-
-
-                        <!-- Gallery Block -->
-                        <div class="gallery-block col-lg-4 col-md-4 col-sm-12">
-                            <div class="image-box">
-                                <figure class="image"><img src="images/Gallery/sc10.jpg" loading="lazy" alt=""></figure>
-
-                            </div>
-                        </div>
-
-                        <!-- Gallery Block -->
-                    </div>
-
                 </div>
-        </section>
-        <!--Gallery Section End -->
 
+                <div class="row" id="gallery-1">
+                    <!-- Gallery Block -->
+                    <div class="gallery-block col-lg-4 col-md-4 col-sm-12">
+                        <div class="image-box">
+                            <figure class="image"><img src="images/Aarambh/Aarambh24_first.jpg" loading="lazy" alt="">
+                            </figure>
 
-
-        <!-- Speakers Section -->
-        <section class="speakers-section">
-            <div class="auto-container">
-                <div class="row">
-                    <!-- Title Column -->
-                    <div class="title-column col-xl-3 col-lg-4 col-md-12">
-                        <div class="sec-title">
-                            <h2>Our<br />Sponsors</h2>
-
-                            <div class="divider"></div>
                         </div>
                     </div>
 
-                    <!-- Sponsors Column -->
+                    <!-- Gallery Block -->
+                    <div class="gallery-block col-lg-4 col-md-4 col-sm-12">
+                        <div class="image-box">
+                            <figure class="image"><img src="images/Aarambh/Aarambh24_second.jpg" loading="lazy" alt="">
+                            </figure>
 
-                    <div class="title-column col-xl-9 col-lg-8 col-md-12">
+                        </div>
+                    </div>
 
-                        <div class="sponsors-outer">
-                            <div class="row">
-                                <!-- Sponsor Block -->
-                                <div class="client-block col-lg-2 col-md-6 col-sm-12 wow fadeInRight"
-                                    data-wow-delay="1500ms">
-                                    <figure class="image-box">
-                                        <span><img src="images/sponsors/kadam.jpg" loading="lazy" alt="" /></span>
-                                    </figure>
+                    <!-- Gallery Block -->
 
-                                </div>
 
-                                <div class="client-block col-lg-4 col-md-6 col-sm-12 wow fadeInRight">
-                                    <figure class="image-box">
-                                        <span><img src="images/sponsors/IEEE-R10.png" loading="lazy" alt="" /></span>
-                                    </figure>
-                                </div>
+                    <!-- Gallery Block -->
+                    <div class="gallery-block col-lg-4 col-md-4 col-sm-12">
+                        <div class="image-box">
+                            <figure class="image"><img src="images/Aarambh/Aarambh24_third.jpg" loading="lazy" alt="">
+                            </figure>
+                        </div>
+                    </div>
 
-                                <!-- Sponsor Block -->
+                    <!-- Gallery Block -->
+                    <div class="gallery-block col-lg-4 col-md-4 col-sm-12">
+                        <div class="image-box">
+                            <figure class="image"><img src="images/Aarambh/Aarambh24_fourth.jpg" loading="lazy" alt="">
+                            </figure>
 
-                                <div class="client-block col-lg-4 col-md-6 col-sm-12 wow fadeInRight"
-                                    data-wow-delay="300ms">
-                                    <figure class="image-box">
-                                        <span><img src="images/sponsors/IEEE_spectrum_logo.png" loading="lazy" alt="" /></span>
-                                    </figure>
-                                </div>
+                        </div>
+                    </div>
+                    <!-- Gallery Block -->
+                    <div class="gallery-block col-lg-4 col-md-4 col-sm-12">
+                        <div class="image-box">
+                            <figure class="image"><img src="images/Aarambh/Aarambh24_fifth.jpg" loading="lazy" alt="">
+                            </figure>
 
-                                <!-- Sponsor Block -->
+                        </div>
+                    </div>
 
-                                <div class="client-block col-lg-4 col-md-6 col-sm-12 wow fadeInRight"
-                                    data-wow-delay="600ms">
-                                    <figure class="image-box">
-                                        <span><img src="images/sponsors/ieee.png" loading="lazy" alt="" /></span>
-                                    </figure>
-                                </div>
+                    <!-- Gallery Block -->
+                    <div class="gallery-block col-lg-4 col-md-4 col-sm-12">
+                        <div class="image-box">
+                            <figure class="image"><img src="images/Aarambh/Aarambh24main.jpg" loading="lazy" alt="">
+                            </figure>
 
-                                <!-- Sponsor Block -->
+                        </div>
+                    </div>
 
-                                <div class="client-block col-lg-4 col-md-6 col-sm-12 wow fadeInRight"
-                                    data-wow-delay="900ms">
-                                    <figure class="image-box">
-                                        <span><img src="images/sponsors/ieee_tv.png" loading="lazy" alt="" /></span>
-                                    </figure>
-                                </div>
+                    <!-- Gallery Block -->
 
-                                <!-- Sponsor Block -->
 
-                                <div class="client-block col-lg-4 col-md-6 col-sm-12 wow fadeInRight"
-                                    data-wow-delay="1200ms">
-                                    <figure class="image-box">
-                                        <span><img src="images/sponsors/IEEEXplore.png" loading="lazy" alt="" /></span>
-                                    </figure>
-                                </div>
+                    <!-- Gallery Block -->
+                    <div class="gallery-block col-lg-4 col-md-4 col-sm-12">
+                        <div class="image-box">
+                            <figure class="image"><img src="images/Aarambh/Aarambh24_seventh.jpg" loading="lazy" alt="">
+                            </figure>
 
-                                <!-- Sponsor Block -->
+                        </div>
+                    </div>
 
-                                <div class="client-block col-lg-4 col-md-6 col-sm-12 wow fadeInRight"
-                                    data-wow-delay="1500ms">
-                                    <figure class="image-box">
-                                        <span><img src="images/sponsors/job-site.png" loading="lazy" alt="" /></span>
-                                    </figure>
-                                </div>
+                    <!-- Gallery Block -->
+                    <div class="gallery-block col-lg-4 col-md-4 col-sm-12">
+                        <div class="image-box">
+                            <figure class="image"><img src="images/Aarambh/Aarambh24_eighth.jpg" loading="lazy" alt="">
+                            </figure>
 
-                                <!-- Sponsor Block -->
+                        </div>
+                    </div>
+                    <!-- Gallery Block -->
+                    <div class="gallery-block col-lg-4 col-md-4 col-sm-12">
+                        <div class="image-box">
+                            <figure class="image"><img src="images/Aarambh/Aarambh24_ninth.jpg" loading="lazy" alt="">
+                            </figure>
 
-                                <div class="client-block col-lg-4 col-md-6 col-sm-12 wow fadeInRight"
-                                    data-wow-delay="1500ms">
-                                    <figure class="image-box">
-                                        <span><img src="images/sponsors/standards.png" loading="lazy" alt="" /></span>
-                                    </figure>
-                                </div>
+                        </div>
+                    </div>
+                </div>
 
-                                <!-- Sponsor Block -->
 
-                                <div class="client-block col-lg-4 col-md-6 col-sm-12 wow fadeInRight"
-                                    data-wow-delay="1500ms">
-                                    <figure class="image-box">
-                                        <span><img src="images/sponsors/technav_banner.png" loading="lazy" alt="" /></span>
-                                    </figure>
+                <div class="row d-none" id="gallery-2">
+                    <!-- Gallery Block -->
+                    <div class="gallery-block col-lg-4 col-md-4 col-sm-12">
+                        <div class="image-box">
+                            <figure class="image"><img src="images/Samwad/Samwaad25_first.jpg" loading="lazy" alt="">
+                            </figure>
 
-                                </div>
-                               
-                                <div class="client-block col-lg-4 col-md-6 col-sm-12 wow fadeInRight"
-                                    data-wow-delay="1500ms">
-                                    <figure class="image-box">
-                                        <span><img src="images/sponsors/codingNinjas.png" loading="lazy" alt="" /></span>
-                                    </figure>
+                        </div>
+                    </div>
 
-                                </div>
-                                <div class="client-block col-lg-3 col-md-6 col-sm-12 wow fadeInRight"
-                                    data-wow-delay="1500ms">
-                                    <figure class="image-box">
-                                        <span><img src="images/sponsors/coding-thinker-logo.png" loading="lazy" alt="" /></span>
-                                    </figure>
+                    <!-- Gallery Block -->
+                    <div class="gallery-block col-lg-4 col-md-4 col-sm-12">
+                        <div class="image-box">
+                            <figure class="image"><img src="images/Samwad/Samwaad25_second.jpg" loading="lazy" alt="">
+                            </figure>
 
-                                </div>
-                                <div class="client-block col-lg-4 col-md-6 col-sm-12 wow fadeInRight"
-                                    data-wow-delay="1500ms">
-                                    <figure class="image-box">
-                                        <span><img src="images/sponsors/balsamiq2.png" loading="lazy" alt="" /></span>
-                                    </figure>
+                        </div>
+                    </div>
 
-                                </div>
-                                <div class="client-block col-lg-4 col-md-6 col-sm-12 wow fadeInRight"
-                                    data-wow-delay="1500ms">
-                                    <figure class="image-box">
-                                        <span><img src="images/sponsors/ibuddy2.png" loading="lazy" alt="" /></span>
-                                    </figure>
+                    <!-- Gallery Block -->
+                    <div class="gallery-block col-lg-4 col-md-4 col-sm-12">
+                        <div class="image-box">
+                            <figure class="image"><img src="images/Samwad/Samwaad25_third.jpg" loading="lazy" alt="">
+                            </figure>
 
-                                </div>
-                                <div class="client-block col-lg-4 col-md-6 col-sm-12 wow fadeInRight"
-                                    data-wow-delay="1500ms">
-                                    <figure class="image-box">
-                                        <span><img src="images/sponsors/EDtimes.png" loading="lazy" alt="" /></span>
-                                    </figure>
+                        </div>
+                    </div>
 
-                                </div>
-                                <div class="client-block col-lg-4 col-md-6 col-sm-12 wow fadeInRight"
-                                    data-wow-delay="1500ms">
-                                    <figure class="image-box">
-                                        <span><img src="images/sponsors/RagaAI.png" loading="lazy" alt="" /></span>
-                                    </figure>
+                    <!-- Gallery Block -->
+                    <div class="gallery-block col-lg-4 col-md-4 col-sm-12">
+                        <div class="image-box">
+                            <figure class="image"><img src="images/Samwad/Samwad25_fourth.jpg" loading="lazy" alt="">
+                            </figure>
 
-                                </div>
-                                <div class="client-block col-lg-4 col-md-6 col-sm-12 wow fadeInRight"
-                                    data-wow-delay="1500ms">
-                                    <figure class="image-box">
-                                        <span><img src="images/sponsors/hitbullseye-logo.png" loading="lazy" alt="" /></span>
-                                    </figure>
+                        </div>
+                    </div>
+                    <!-- Gallery Block -->
+                    <div class="gallery-block col-lg-4 col-md-4 col-sm-12">
+                        <div class="image-box">
+                            <figure class="image"><img src="images/Samwad/Samwad25_fifth.jpg" loading="lazy" alt="">
+                            </figure>
 
-                                </div>
-                                
-                            </div>
+                        </div>
+                    </div>
+                    <!-- Gallery Block -->
+                    <div class="gallery-block col-lg-4 col-md-4 col-sm-12">
+                        <div class="image-box">
+                            <figure class="image"><img src="images/Samwad/Samwad25_sixth.jpg" loading="lazy" alt="">
+                            </figure>
+
+                        </div>
+                    </div>
+                    <!-- Gallery Block -->
+                    <div class="gallery-block col-lg-4 col-md-4 col-sm-12">
+                        <div class="image-box">
+                            <figure class="image"><img src="images/Samwad/Samwad25_seventh.jpg" loading="lazy" alt="">
+                            </figure>
+
+                        </div>
+                    </div>
+                    <!-- Gallery Block -->
+                    <div class="gallery-block col-lg-4 col-md-4 col-sm-12">
+                        <div class="image-box">
+                            <figure class="image"><img src="images/Samwad/Samwad25_eighth.jpg" loading="lazy" alt="">
+                            </figure>
+
+                        </div>
+                    </div>
+                    <!-- Gallery Block -->
+                    <div class="gallery-block col-lg-4 col-md-4 col-sm-12">
+                        <div class="image-box">
+                            <figure class="image"><img src="images/Samwad/Samwad25_ninth.jpg" loading="lazy" alt="">
+                            </figure>
+
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Originally designed for SRAJAN but in use for SCEECS -->
+                <div class="row d-none" id="gallery-3">
+                    <!-- Gallery Block -->
+                    <div class="gallery-block col-lg-4 col-md-4 col-sm-12">
+                        <div class="image-box">
+                            <figure class="image"><img src="images/SCEECS/SCEECS24_1.JPG" loading="lazy" alt="">
+                            </figure>
+
+                        </div>
+                    </div>
+
+                    <!-- Gallery Block -->
+                    <div class="gallery-block col-lg-4 col-md-4 col-sm-12">
+                        <div class="image-box">
+                            <figure class="image"><img src="images/SCEECS/SCEECS24_2.JPG" loading="lazy" alt="">
+                            </figure>
+
+                        </div>
+                    </div>
+
+                    <!-- Gallery Block -->
+                    <div class="gallery-block col-lg-4 col-md-4 col-sm-12">
+                        <div class="image-box">
+                            <figure class="image"><img src="images/SCEECS/SCEECS24_3.JPG" loading="lazy" alt="">
+                            </figure>
+
+                        </div>
+                    </div>
+
+                    <!-- Gallery Block -->
+                    <div class="gallery-block col-lg-4 col-md-4 col-sm-12">
+                        <div class="image-box">
+                            <figure class="image"><img src="images/SCEECS/SCEECS24_4.JPG" loading="lazy" alt="">
+                            </figure>
+
+                        </div>
+                    </div>
+                    <!-- Gallery Block -->
+                    <div class="gallery-block col-lg-4 col-md-4 col-sm-12">
+                        <div class="image-box">
+                            <figure class="image"><img src="images/SCEECS/SCEECS24_5.JPG" loading="lazy" alt="">
+                            </figure>
+
+                        </div>
+                    </div>
+                    <!-- Gallery Block -->
+                    <div class="gallery-block col-lg-4 col-md-4 col-sm-12">
+                        <div class="image-box">
+                            <figure class="image"><img src="images/SCEECS/SCEECS24_6.JPG" loading="lazy" alt="">
+                            </figure>
+
+                        </div>
+                    </div>
+                    <!-- Gallery Block -->
+                    <div class="gallery-block col-lg-4 col-md-4 col-sm-12">
+                        <div class="image-box">
+                            <figure class="image"><img src="images/SCEECS/SCEECS24_7.JPG" loading="lazy" alt="">
+                            </figure>
+
+                        </div>
+                    </div>
+                    <!-- Gallery Block -->
+                    <div class="gallery-block col-lg-4 col-md-4 col-sm-12">
+                        <div class="image-box">
+                            <figure class="image"><img src="images/SCEECS/SCEECS24_8.JPG" loading="lazy" alt="">
+                            </figure>
+
+                        </div>
+                    </div>
+                    <!-- Gallery Block -->
+                    <div class="gallery-block col-lg-4 col-md-4 col-sm-12">
+                        <div class="image-box">
+                            <figure class="image"><img src="images/SCEECS/SCEECS24_9.JPG" loading="lazy" alt="">
+                            </figure>
 
                         </div>
                     </div>
 
                 </div>
+
+                <div class="row d-none" id="gallery-4">
+                    <!-- Gallery Block -->
+                    <div class="gallery-block col-lg-4 col-md-4 col-sm-12">
+                        <div class="image-box">
+                            <figure class="image"><img src="images/Gallery/sceecs_24_5.jpg" loading="lazy" alt="">
+                            </figure>
+
+                        </div>
+                    </div>
+
+                    <!-- Gallery Block -->
+                    <div class="gallery-block col-lg-4 col-md-4 col-sm-12">
+                        <div class="image-box">
+                            <figure class="image"><img src="images/Gallery/sceecs_24_2.jpg" loading="lazy" alt="">
+                            </figure>
+
+                        </div>
+                    </div>
+
+                    <!-- Gallery Block -->
+                    <div class="gallery-block col-lg-4 col-md-4 col-sm-12">
+                        <div class="image-box">
+                            <figure class="image"><img src="images/Gallery/sceecs_24_1.jpg" loading="lazy" alt="">
+                            </figure>
+
+                        </div>
+                    </div>
+
+                    <!-- Gallery Block -->
+
+                    <!-- Gallery Block -->
+                    <div class="gallery-block col-lg-4 col-md-4 col-sm-12">
+                        <div class="image-box">
+                            <figure class="image"><img src="images/Gallery/sc6.jpg" loading="lazy" alt=""></figure>
+
+                        </div>
+                    </div>
+
+                    <!-- Gallery Block -->
+
+
+                    <!-- Gallery Block -->
+                    <div class="gallery-block col-lg-4 col-md-4 col-sm-12">
+                        <div class="image-box">
+                            <figure class="image"><img src="images/Gallery/sceecs_24_6.jpg" loading="lazy" alt="">
+                            </figure>
+
+                        </div>
+                    </div>
+
+                    <!-- Gallery Block -->
+
+
+                    <!-- Gallery Block -->
+                    <div class="gallery-block col-lg-4 col-md-4 col-sm-12">
+                        <div class="image-box">
+                            <figure class="image"><img src="images/Gallery/sc8.jpg" loading="lazy" alt=""></figure>
+
+                        </div>
+                    </div>
+
+                    <!-- Gallery Block -->
+                    <div class="gallery-block col-lg-4 col-md-4 col-sm-12">
+                        <div class="image-box">
+                            <figure class="image"><img src="images/Gallery/sceecs_24_3.jpg" loading="lazy" alt="">
+                            </figure>
+
+                        </div>
+                    </div>
+
+                    <!-- Gallery Block -->
+                    <div class="gallery-block col-lg-4 col-md-4 col-sm-12">
+                        <div class="image-box">
+                            <figure class="image"><img src="images/Gallery/sc12.png" loading="lazy" alt=""></figure>
+
+                        </div>
+                    </div>
+
+                    <!-- Gallery Block -->
+
+
+                    <!-- Gallery Block -->
+                    <div class="gallery-block col-lg-4 col-md-4 col-sm-12">
+                        <div class="image-box">
+                            <figure class="image"><img src="images/Gallery/sc10.jpg" loading="lazy" alt=""></figure>
+
+                        </div>
+                    </div>
+
+                    <!-- Gallery Block -->
+                </div>
+
             </div>
-        </section>
-        <!-- End Speakers Section -->
-        <!-- Main Footer -->
+    </section>
+    <!--Gallery Section End -->
 
-        <footer class="main-footer call-to-action">
-            <div class="anim-icons full-width">
 
-                <span class="icon icon-dotted-world left"></span>
 
-                <span class="icon icon-dotted-world right"></span>
+    <!-- Speakers Section -->
+    <section class="speakers-section">
+        <div class="auto-container">
+            <div class="row">
+                <!-- Title Column -->
+                <div class="title-column col-xl-3 col-lg-4 col-md-12">
+                    <div class="sec-title">
+                        <h2>Our<br />Sponsors</h2>
+
+                        <div class="divider"></div>
+                    </div>
+                </div>
+
+                <!-- Sponsors Column -->
+
+                <div class="title-column col-xl-9 col-lg-8 col-md-12">
+
+                    <div class="sponsors-outer">
+                        <div class="row">
+                            <!-- Sponsor Block -->
+                            <div class="client-block col-lg-2 col-md-6 col-sm-12 wow fadeInRight"
+                                data-wow-delay="1500ms">
+                                <figure class="image-box">
+                                    <span><img src="images/sponsors/kadam.jpg" loading="lazy" alt="" /></span>
+                                </figure>
+
+                            </div>
+
+                            <div class="client-block col-lg-4 col-md-6 col-sm-12 wow fadeInRight">
+                                <figure class="image-box">
+                                    <span><img src="images/sponsors/IEEE-R10.png" loading="lazy" alt="" /></span>
+                                </figure>
+                            </div>
+
+                            <!-- Sponsor Block -->
+
+                            <div class="client-block col-lg-4 col-md-6 col-sm-12 wow fadeInRight"
+                                data-wow-delay="300ms">
+                                <figure class="image-box">
+                                    <span><img src="images/sponsors/IEEE_spectrum_logo.png" loading="lazy"
+                                            alt="" /></span>
+                                </figure>
+                            </div>
+
+                            <!-- Sponsor Block -->
+
+                            <div class="client-block col-lg-4 col-md-6 col-sm-12 wow fadeInRight"
+                                data-wow-delay="600ms">
+                                <figure class="image-box">
+                                    <span><img src="images/sponsors/ieee.png" loading="lazy" alt="" /></span>
+                                </figure>
+                            </div>
+
+                            <!-- Sponsor Block -->
+
+                            <div class="client-block col-lg-4 col-md-6 col-sm-12 wow fadeInRight"
+                                data-wow-delay="900ms">
+                                <figure class="image-box">
+                                    <span><img src="images/sponsors/ieee_tv.png" loading="lazy" alt="" /></span>
+                                </figure>
+                            </div>
+
+                            <!-- Sponsor Block -->
+
+                            <div class="client-block col-lg-4 col-md-6 col-sm-12 wow fadeInRight"
+                                data-wow-delay="1200ms">
+                                <figure class="image-box">
+                                    <span><img src="images/sponsors/IEEEXplore.png" loading="lazy" alt="" /></span>
+                                </figure>
+                            </div>
+
+                            <!-- Sponsor Block -->
+
+                            <div class="client-block col-lg-4 col-md-6 col-sm-12 wow fadeInRight"
+                                data-wow-delay="1500ms">
+                                <figure class="image-box">
+                                    <span><img src="images/sponsors/job-site.png" loading="lazy" alt="" /></span>
+                                </figure>
+                            </div>
+
+                            <!-- Sponsor Block -->
+
+                            <div class="client-block col-lg-4 col-md-6 col-sm-12 wow fadeInRight"
+                                data-wow-delay="1500ms">
+                                <figure class="image-box">
+                                    <span><img src="images/sponsors/standards.png" loading="lazy" alt="" /></span>
+                                </figure>
+                            </div>
+
+                            <!-- Sponsor Block -->
+
+                            <div class="client-block col-lg-4 col-md-6 col-sm-12 wow fadeInRight"
+                                data-wow-delay="1500ms">
+                                <figure class="image-box">
+                                    <span><img src="images/sponsors/technav_banner.png" loading="lazy" alt="" /></span>
+                                </figure>
+
+                            </div>
+
+                            <div class="client-block col-lg-4 col-md-6 col-sm-12 wow fadeInRight"
+                                data-wow-delay="1500ms">
+                                <figure class="image-box">
+                                    <span><img src="images/sponsors/codingNinjas.png" loading="lazy" alt="" /></span>
+                                </figure>
+
+                            </div>
+                            <div class="client-block col-lg-4 col-md-6 col-sm-12 wow fadeInRight"
+                                data-wow-delay="1500ms">
+                                <figure class="image-box">
+                                    <span><img src="images/sponsors/hitbullseye-logo.png" loading="lazy"
+                                            alt="" /></span>
+                                </figure>
+
+                            </div>
+                            <div class="client-block col-lg-4 col-md-6 col-sm-12 wow fadeInRight"
+                                data-wow-delay="1500ms">
+                                <figure class="image-box">
+                                    <span><img src="images/sponsors/EDtimes.png" loading="lazy" alt="" /></span>
+                                </figure>
+
+                            </div>
+
+                            <div class="client-block col-lg-4 col-md-6 col-sm-12 wow fadeInRight"
+                                data-wow-delay="1500ms">
+                                <figure class="image-box">
+                                    <span><img src="images/sponsors/ibuddy2.png" loading="lazy" alt="" /></span>
+                                </figure>
+
+                            </div>
+                            <div class="client-block col-lg-3 col-md-6 col-sm-12 wow fadeInRight"
+                                data-wow-delay="1500ms">
+                                <figure class="image-box">
+                                    <span><img src="images/sponsors/balsamiq2.png" loading="lazy" alt="" /></span>
+                                </figure>
+
+                            </div>
+                            
+                            <div class="client-block col-lg-4 col-md-6 col-sm-12 wow fadeInRight"
+                                data-wow-delay="1500ms">
+                                <figure class="image-box">
+                                    <span><img src="images/sponsors/RagaAI.png" loading="lazy" alt="" /></span>
+                                </figure>
+
+                            </div>
+                            <div class="client-block col-lg-3 col-md-6 col-sm-12 wow fadeInRight"
+                                data-wow-delay="1500ms">
+                                <figure class="image-box">
+                                    <span><img src="images/sponsors/coding-thinker-logo.png" loading="lazy"
+                                            alt="" /></span>
+                                </figure>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
 
             </div>
+        </div>
+    </section>
+    <!-- End Speakers Section -->
+    <!-- Main Footer -->
+
+    <footer class="main-footer call-to-action">
+        <div class="anim-icons full-width">
+
+            <span class="icon icon-dotted-world left"></span>
+
+            <span class="icon icon-dotted-world right"></span>
+
+        </div>
+
+        <div class="auto-container">
+
+            <!-- Footer Content -->
+
+            <div class="footer-content wow fadeInUp">
+
+                <div class="text-center">
+
+                    <div class="footer-logo">
+                        <a href="index.html"><img src="images/logo.png" loading="lazy" alt="" style="width: 200px;"></a>
+                    </div>
+
+                    <div class="text">Whether you are starting out or at the very height of your career, these are
+                        the stepping stones of your professional path. No matter where you are in your journey, IEEE
+                        can help you find your path.</div>
+
+                </div>
+
+                <ul class="social-icon-two">
+
+                    <li><a href="https://www.facebook.com/IEEEMANIT/" target="_blank"><span
+                                class="fab fa-facebook-f"></span></a></li>
+
+                    <li><a href="https://www.instagram.com/ieee_manit/" target="_blank"><span
+                                class="fab fa-instagram"></span></a></li>
+
+                    <li><a href="https://twitter.com/ieeemsb" target="_blank"><span class="fab fa-twitter"></span></a>
+                    </li>
+
+                    <li><a href="https://www.linkedin.com/company/ieeenitb/mycompany/" target="_blank"><span
+                                class="fab fa-linkedin"></span></a></li>
+
+                </ul>
+
+
+
+
+
+            </div>
+
+        </div>
+
+
+
+        <div class="footer-bottom">
 
             <div class="auto-container">
 
-                <!-- Footer Content -->
+                <div class="">
 
-                <div class="footer-content wow fadeInUp">
+                    <ul class="footer-nav">
 
-                    <div class="text-center">
+                        <!-- <li><a href="#">Terms of Service</a></li> -->
 
-                        <div class="footer-logo">
-                            <a href="index.html"><img src="images/logo.png" loading="lazy" alt="" style="width: 200px;"></a>
-                        </div>
-
-                        <div class="text">Whether you are starting out or at the very height of your career, these are
-                            the stepping stones of your professional path. No matter where you are in your journey, IEEE
-                            can help you find your path.</div>
-
-                    </div>
-
-                    <ul class="social-icon-two">
-
-                        <li><a href="https://www.facebook.com/IEEEMANIT/" target="_blank"><span
-                                    class="fab fa-facebook-f"></span></a></li>
-
-                        <li><a href="https://www.instagram.com/ieee_manit/" target="_blank"><span
-                                    class="fab fa-instagram"></span></a></li>
-
-                        <li><a href="https://twitter.com/ieeemsb" target="_blank"><span
-                                    class="fab fa-twitter"></span></a></li>
-
-                        <li><a href="https://www.linkedin.com/company/ieeenitb/mycompany/" target="_blank"><span
-                                    class="fab fa-linkedin"></span></a></li>
+                        <!-- <li><a href="#">Privacy Policy</a></li> -->
 
                     </ul>
 
 
 
+                    <div class="copyright-text text-center">
 
-
-                </div>
-
-            </div>
-
-
-
-            <div class="footer-bottom">
-
-                <div class="auto-container">
-
-                    <div class="">
-
-                        <ul class="footer-nav">
-
-                            <!-- <li><a href="#">Terms of Service</a></li> -->
-
-                            <!-- <li><a href="#">Privacy Policy</a></li> -->
-
-                        </ul>
-
-
-
-                        <div class="copyright-text text-center">
-
-                            <p>Copyright © 2022 All Rights Reserved by <a href="#">IEEE MSB</a></p>
-
-                        </div>
+                        <p>Copyright © 2022 All Rights Reserved by <a href="#">IEEE MSB</a></p>
 
                     </div>
 
@@ -1401,8 +1464,10 @@
 
             </div>
 
-        </footer>
-        <!-- End Footer -->
+        </div>
+
+    </footer>
+    <!-- End Footer -->
 
 
 
